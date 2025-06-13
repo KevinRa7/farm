@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+    <form method="post" action="login.php" class="login-container">
+        <h1>Login</h1>
+        <label for="email">Email</label>
+        <input type="email" name="email" required>
+
+        <label for="pass">Password</label>
+        <input type="password" id="pass" name="pass" required>
+
+        <div class="view-password">
+            <input type="checkbox" id="togglePassword">
+            <label for="togglePassword">Show Password</label>
+        </div>
+
+        <div class="links">
+            <a href="registeration.html">Register</a>
+            <a href="otpgenerator.html">Forgot Password?</a>
+        </div>
+
+        <input type="submit" value="Login">
+    </form>
+
+    <script>
+        const passwordInput = document.getElementById('pass');
+        const togglePassword = document.getElementById('togglePassword');
+
+        togglePassword.addEventListener('change', function () {
+            passwordInput.type = this.checked ? 'text' : 'password';
+        });
+    </script>
+</body>
+</html>
