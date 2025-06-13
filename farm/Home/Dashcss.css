@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    justify-content: center; /* Align items in the center */
+    gap: 10px; /* Adds spacing between boxes */
+}
+
+.box1, .box2, .box3 {
+    background-color: yellow;
+    padding: 2em;
+    margin-top: 5%;
+}
+.box2 {
+    background-color: rgb(66, 251, 16);
+    margin-left: 150px;
+}
+.box3 {
+    background-color: rgb(13, 223, 251);
+    margin-left: 200px;
+}
+.search{
+    opacity: 0.5;
+    display: block;
+    justify-content: center;
+    padding-left: 12px;
+    color: aqua;
+    margin-left: 40%;
+
+    
+}
